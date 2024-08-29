@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* reset css */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #8fcdee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Alinha os itens verticalmente no centro */
+        gap: 80px; /* espaço entre os itens */
+      }
+
+      article {
+        width: 180px;
+        height: 180px;
+        padding: 15px;
+        margin-top: 25px;
+        border: 1px dashed #009afa;
+        border-radius: 10px;
+        background-color: #dee1e8;
+        text-align: center;
+        box-shadow: 2px 2px 5px black;
+      }
+
+      /* imagem dentro do article */
+      article img {
+        width: 40px;
+      }
+      
+      article h1 {
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        text-transform: uppercase;
+      }
+      
+      article p {
+        font-family: cursive;
+        font-size: 12px;
+      }
+
+      .caixa-azul {
+        background-color: #01a2fc;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <img src="./imagens/flash.svg" alt="imagem de um raio" />
+        <h1>Web Design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+
+      <article class="caixa-azul">
+        <img src="./imagens/flash.svg" alt="imagem de um raio" />
+        <h1>Web Design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+
+      <article>
+        <img src="./imagens/flash.svg" alt="imagem de um raio" />
+        <h1>Web Design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+    </section>
+  </body>
+</html>

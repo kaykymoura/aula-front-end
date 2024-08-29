@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layouts flexiveis com flexbox </title>
-     <style>
+    <title>Layouts flexíveis com flexbox</title>
+    <style>
+        /* Estilo para o container flexível */
+        section {
+            display: flex; /* Define o container como um flex container, permitindo o uso das propriedades do Flexbox. */
+            flex-direction: row; /* Alinha os itens horizontalmente (linha). Alternativamente, você pode usar 'column' para alinhamento vertical. */
+            justify-content: flex-start; /* Alinha os itens ao início do eixo principal (horizontalmente, no caso de 'row'). Outros valores possíveis: 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly'. */
+            align-items: stretch; /* Alinha os itens ao longo do eixo transversal (verticalmente, no caso de 'row'). Alternativamente, você pode usar 'flex-start', 'center', 'flex-end', 'baseline'. */
+            flex-wrap: wrap; /* Permite que os itens flexíveis se movam para a linha seguinte quando não há espaço suficiente na linha atual */
+            
 
-section {
-    display: flex;
-    justify-content: flex-start;
-            width: 700px;
-            height: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            border: 3px dotted black;
+
+            
+            width: 700px; /* Largura do container */
+            height: 500px; /* Altura do container */
+            margin-left: auto; /* Centraliza o container horizontalmente na página */
+            margin-right: auto; /* Centraliza o container horizontalmente na página */
+            border: 3px dotted black; /* Borda ao redor do container para visualização */
         }
 
+        /* Estilo para os itens dentro do container flexível */
         article {
-            width: 100px;
-            height: 100px;
-            background-color: brown;
-            border: 1px solid red;
-            margin-bottom: 10px;
-            border-radius: 5px;
+            display: flex; /* Define o item como um flex container, permitindo o uso das propriedades do Flexbox dentro dele. */
+            justify-content: center; /* Alinha o conteúdo horizontalmente no centro do item. */
+            align-items: center; /* Alinha o conteúdo verticalmente no centro do item. */
+            width: 100px; /* Largura dos itens */
+            height: 100px; /* Altura dos itens */
+            margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+            background-color: salmon; /* Cor de fundo dos itens */
+            border: 1px dashed grey; /* Borda ao redor dos itens para visualização */
+            border-radius: 5px; /* Cantos arredondados dos itens */
         }
-     </style>
-
-    
-   
+    </style>
 </head>
 <body>
-    
+
+    <!-- Container principal usando Flexbox -->
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
+        <!-- Itens do flex container -->
+        <article>item 1</article>
+        <article>item 2</article>
+        <article>item 3</article>
+        <article>item 4</article>
+        <article>item 5</article>
+        <article>item 6</article>
+        <article>item 7</article>
+        <article>item 8</article>
+        <article>item 9</article>
+        <article>item 10</article>
+    
+            
+    
+        
     </section>
     
 </body>
